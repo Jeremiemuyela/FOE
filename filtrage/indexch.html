@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Offres d'emploi</title>
+    <link rel="stylesheet" href="stylech.css">
+    <link rel="stylesheet" href="../page d'accueil/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">JmE</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="../page d'accueil/index.html">Accueil</a></li>
+                <li><a href="../page d'inscription/index.html">Offre d'emploie</a></li>
+                <li><a href="../page d'inscription/index.html">vous</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closebtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder="Recherchez ici. . .">
+        </div>
+    </header>
+    <div class="filters">
+        <h2>Filtres</h2>
+        <form id="filter-form">
+            <label for="title">Titre :</label>
+            <input type="text" id="title" name="title"><br><br>
+            <label for="location">Lieu :</label>
+            <input type="text" id="location" name="location"><br><br>
+            <label for="category">Catégorie :</label>
+            <select id="category" name="category">
+                <option value="">Toutes les catégories</option>
+                <option value="IT">IT</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Finances">Finances</option>
+            </select><br><br>
+            <button type="submit">Filtrer</button>
+        </form>
+    </div>
+    <div class="jobs">
+        <h2>Résultats</h2>
+        <ul id="job-list">
+            <li class="job">
+                <h3 class="title">Développeur Front-End</h3>
+                <p class="location">Abidjan, Côte d'Ivoire</p>
+                <p class="category">IT</p>
+            </li>
+            <li class="job">
+                <h3 class="title">Responsable Marketing</h3>
+                <p class="location">Lagos, Nigeria</p>
+                <p class="category">Marketing</p>
+            </li>
+            <li class="job">
+                <h3 class="title">Comptable</h3>
+                <p class="location">Dakar, Sénégal</p>
+                <p class="category">Finances</p>
+            </li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<?php
+//envoyer les données quand on clicque sur le bouton
+if (isset($_POST["Créer"])) {
+    if (!empty($_POST["nc"], !empty($_POST["ae"], !empty($_POST ["mdp"]))) {
+    } else {
+        echo "Veillez remplir tous les champs ...";
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulaire d'inscription d'offres d'emploi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https : //fonts.googleapis.com/css2?family= Bebas +Neue & family= Playfair+Display:ital,wght@0,700;0,800;1,700 & family= Poppins:wght@300;400;600;700 & display=swap"
+        rel="feuille de style">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../page d'accueil/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">JmE</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="../page d'accueil/index.html">Accueil</a></li>
+                <li><a href="../page d'inscription/index.html">Offre d'emploie</a></li>
+                <li><a href="../page d'inscription/index.html">vous</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closebtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder="Recherchez ici. . .">
+        </div>
+    </header>
+
+    <!--<form name="signupForm" onsubmit="return validateForm()">
+        <h2>Inscription</h2>
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="jobType">Type d'emploi recherché:</label>
+        <select id="jobType" name="jobType">
+            <option value="tous">Tous les types</option>
+            <option value="temps-plein">Temps plein</option>
+            <option value="temps-partiel">Temps partiel</option>
+            <option value="freelance">Freelance</option>
+        </select>
+        <input type="submit" value="S'inscrire">
+    </form>
+    <div class="ss">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Créer un compte</h1>
+                    <div class="social-container">
+                        <a href="#" class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>Utiliser compte gmail</span>
+                    <input class="les" type="text" placeholder="Nom">
+                    <input class="les" type="email" placeholder="Email">
+                    <input class="les" type="password" placeholder="Mot de passe">
+                    <button>Créer le compte</button>
+                </form>
+            </div>
+            <div class="form-container login-container">
+                <form action="#">
+                    <h1>Se connecter</h1>
+                    <div class="social-container">
+                        <a href="#" class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>je n'ai pas de compte</span>
+                    <input class="les" type="email" placeholder="Email">
+                    <input class="les" type="password" placeholder="Mot de passe">
+                    <button>Connexion</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Heureux de vous revoir <br> parmis nous</h1>
+                        <p class="p">Connectez-vous et apprenez à nouveau <br> des bonnes recettes pour une explosion
+                            <br>
+                            des saveurs
+                        </p>
+                        <button class="ghost" id="login">Se connecter</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-right">
+                        <h1>Bienvenue!</h1>
+                        <p class="p">Nous serons extremement heureux de <br> vous compter parmis nous prochainement;<br>
+                            Céer un comte et découvrez ce <br> que nous vous proposerons
+                        </p>
+                        <button class="ghost" id="signup">Créer un compte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>-->
+    <div class="a">
+        <section class="wrapper active">
+            <div class="form signup">
+                <h1>Créer un compte</h1>
+                <form method="POST" action="#">
+                    <input type="text" name="nc" placeholder="Nom complet" required>
+                    <input type="text" name="ae" placeholder="Adress Email" required>
+                    <input type="password" name="mdp" placeholder="Mot de passe" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="signupcheck">
+                        <label for="">J'accepte tous les termes et conditions</label>
+                    </div>
+                    <input type="submit" value="Créer">
+                </form>
+            </div>
+            <div class="form login">
+                <h1>Se connecter</h1>
+                <form action="#">
+                    <input type="text" placeholder="Adress Email" required>
+                    <input type="password" placeholder="Mot de passe" required>
+                    <a href="#">Mot de passe oublié?</a>
+                    <input type="submit" value="Connexion">
+                    <!--<a href="../filtrage/indexch.html" class="connexion">connexion</a>-->
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        const wrapper = document.querySelector(".wrapper"),
+            signupHeader = document.querySelector(".signup h1"),
+            loginHeader = document.querySelector(".login h1");
+
+        loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>
